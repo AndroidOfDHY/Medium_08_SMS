@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/more_bg" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:background="@drawable/topbar_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:ellipsize="middle"
+            android:gravity="center_horizontal"
+            android:text="个人资料  "
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/avatar_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/avatar_default" />
+
+    <TextView
+        android:id="@+id/nick_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/avatar_more"
+        android:layout_marginLeft="26dp"
+        android:layout_toRightOf="@+id/avatar_more"
+        android:text="nick" />
+
+    <TextView
+        android:id="@+id/age_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nick_more"
+        android:layout_below="@+id/nick_more"
+        android:text="age" />
+
+    <TextView
+        android:id="@+id/sex_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/age_more"
+        android:layout_alignLeft="@+id/nick_more"
+        android:text="sex" />
+
+    <TextView
+        android:id="@+id/trends_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/avatar_more"
+        android:layout_below="@+id/avatar_more"
+        android:layout_marginTop="25dp"
+        android:text="trends" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="240dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trends_more"
+        android:layout_marginLeft="25dip"
+        android:layout_marginTop="40dip" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="240dip"
+            android:layout_height="48dip"
+            android:background="@drawable/more_item_nor" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/more_add" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="添加好友"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="240dip"
+            android:layout_height="48dip"
+            android:background="@drawable/more_item_nor" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/more_chat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="发起会话"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="240dip"
+            android:layout_height="48dip"
+            android:background="@drawable/more_item_nor" >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/more_trends" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="查看空间"
+                android:textSize="16sp" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
